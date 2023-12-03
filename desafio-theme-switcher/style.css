@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --dark: #292c35;
+  --light: #f1f1f1;
+  --label: #111;
+}
+
+body {
+  background-color: #292c35;
+  transition: 0.5s ease;
+}
+.button {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--label);
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.ball {
+  width: 82px;
+  height: 82px;
+  border-radius: 50px;
+  background: white;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.moon {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  top: 12px;
+  left: 11px;
+}
+
+.sun {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  top: 12px;
+  right: 10px;
+}
+
+body.active {
+  background-color: var(--light);
+}
+
+body.active .ball {
+  transform: translateX(-150px);
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vet.</title>
+  </head>
+  <body>
+    <section id="sidebar" class="sidebar">
+      <div class="sidebar-nav">
+        <header class="sidebar-header">
+          <img class="sidebar-logo" src="assets/logo.svg" />
+          <button onclick="toggleSidebar()">
+            <img src="assets/menu.svg" />
+          </button>
+        </header>
+        <ul class="sidebar-content">
+          <li class="sidebar-input">
+            <img
+              class="sidebar-icon-search"
+              src="assets/search.svg"
+              onclick="toggleSidebarBySearch()"
+            />
+            <input
+              type="text"
+              name="sidebar-search"
+              id="sidebar-search"
+              placeholder="Buscar"
+            />
+          </li>
+          <li class="sidebar-wrapper">
+            <a href="#">
+              <img class="sidebar-icon" src="assets/grid.svg" alt="" />
+              <span class="sidebar-text">Dashboad</span>
+            </a>
+          </li>
+          <li class="sidebar-wrapper">
+            <a href="#">
+              <img class="sidebar-icon" src="assets/pet.svg" alt="" />
+              <span class="sidebar-text">Pets</span>
+            </a>
+          </li>
+          <li class="sidebar-wrapper">
+            <a href="#">
+              <img class="sidebar-icon" src="assets/user.svg" alt="" />
+              <span class="sidebar-text">Clientes</span>
+            </a>
+          </li>
+          <li class="sidebar-wrapper">
+            <a href="#">
+              <img class="sidebar-icon" src="assets/vet.svg" alt="" />
+              <span class="sidebar-text">Vets</span>
+            </a>
+          </li>
+          <li class="sidebar-wrapper">
+            <a href="#">
+              <img class="sidebar-icon" src="assets/settings.svg" alt="" />
+              <span class="sidebar-text">Ajustes</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <footer class="footer-sidebar">
+        <div class="sidebar-user-information">
+          <img class="sidebar-profile" src="assets/photo.jpg" alt="" />
+          <div class="sidebar-user">
+            <p class="sidebar-username">Eleanor Pena</p>
+            <p class="sidebar-function">Veterinária</p>
+          </div>
+        </div>
+        <img class="sidebar-logoout" src="assets/log-out.svg" alt="" />
+      </footer>
+      <script src="script.js"></script>
+    </section>
+    <section id="main"><h1>Dashboad</h1></section>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Camp.in</title>
+  </head>
+  <body>
+    <section class="section-form">
+      <header>
+        <img src="assets/logo.svg" alt="logo da camp.in" />
+      </header>
+      <div class="form-container">
+        <form onsubmit="return validateForm()">
+          <div class="header-form">
+            <div class="content-header-form">
+              <img
+                class="log-in"
+                src="assets/log-in.svg"
+                alt="icone de log-in"
+              />
+              <h1 class="title">Faça seu login</h1>
+            </div>
+            <p class="paragraph">Entre com suas informações de cadastro.</p>
+          </div>
+          <div class="content-form">
+            <div class="form-email">
+              <label for="email">E-mail</label>
+              <div class="input-container-email">
+                <img class="icon" src="assets/mail.svg" alt="" />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <span id="email-error" class="error-message"></span>
+            </div>
+            <div class="form-password">
+              <label for="password">Senha</label>
+              <div class="input-container-password">
+                <img class="icon" src="assets/lock.svg" alt="" />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  placeholder="Digite sua senha"
+                />
+                <img
+                  class="icon-2"
+                  id="icon-2"
+                  src="assets/eye.svg"
+                  alt=""
+                  onclick="tooglePasswordVisibility()"
+                />
+              </div>
+              <span id="senha-error" class="error-message"></span>
+            </div>
+            <div class="form-check">
+              <div class="checkbox-container">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label id="remember-label" for="remember">Lembre-me</label>
+              </div>
+              <a class="link-password" href="#">Esqueci minha senha</a>
+            </div>
+            <button type="submit" class="button">Entrar</button>
+            <p class="no-account">
+              Não tem uma conta? <a href="#">Registre-se</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section-image"></section>
+    <script src="script.js" defer></script>
+  </body>
+</html>

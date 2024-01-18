@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>RocketCoffee</title>
+    <link rel="icon" href="assets/logo-desktop.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="blur-top">
+      <img src="assets/blur-2.png" alt="" />
+    </div>
+    <div class="container container-mobile">
+      <header id="header" class="header">
+        <a href="#"
+          ><img
+            class="logo"
+            src="assets/logo-desktop.svg"
+            alt="logo do RocketCoffee"
+        /></a>
+        <nav id="nav">
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Recompensas</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Lojas</a></li>
+          </ul>
+        </nav>
+        <button class="get-coffee">Pegar meu café</button>
+      </header>
+      <div class="header-mobile-container">
+        <a class="logo-mobile" href="#"
+          ><img src="assets/logo-mobile.svg" alt=""
+        /></a>
+        <button id="btn-menu" class="btn-menu" onclick="clickMenu()">
+          <img src="assets/menu-buguer-open.svg" alt="" />
+        </button>
+      </div>
+
+      <div id="itens" class="menu">
+        <ul class="nav-mobile">
+          <li class="element-mobile"><a href="#">Home</a></li>
+          <li class="element-mobile"><a href="#">Menu</a></li>
+          <li class="element-mobile"><a href="#">Recompensas</a></li>
+          <li class="element-mobile"><a href="#">Gift Cards</a></li>
+          <li class="element-mobile"><a href="#">Lojas</a></li>
+        </ul>
+      </div>
+
+      <main id="main">
+        <section id="section2" class="section-mobile">
+          <h1 class="title-mobile">
+            O café que fará seu código decolar para o próximo nível
+          </h1>
+          <button class="btn-section-mobile">
+            Pegar meu café
+            <img src="assets/arrow.svg" alt="" />
+          </button>
+        </section>
+        <section id="section">
+          <h1 class="title">Great Coffee</h1>
+          <span class="stylized-title">&lt;Great Code/&gt;</span>
+          <img class="img01" src="assets/rocket-coffee.png" alt="" />
+          <div>
+            <img class="img02" src="assets/rocket-coffee-2.png" alt="" />
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="blur-bottom">
+      <img src="assets/blur-1.png" alt="" />
+    </div>
+    <div id="blur2" class="blur-mobile"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
